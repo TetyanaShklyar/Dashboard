@@ -6,7 +6,7 @@ const User = () => {
   return (
     <div className="user">
       <div className="user-photo">
-        <img src={image} />
+        <img src={`${window.location.pathname}` + image} />
       </div>
       <div className="user-name">
         <p>{name}</p>
