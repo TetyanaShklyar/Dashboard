@@ -2,9 +2,9 @@ import './styles.scss'
 
 const Pagination = () => {
   return (
-    <div className="pagination-list">
-      <div className="text">
-        <p>Showing data 1 to 8 of 256K entries</p>
+    <div className="pagination_list">
+      <div className="pagination_block">
+        <p className="pagination_text">Showing data 1 to 8 of 256K entries</p>
       </div>
       <nav>
         <ul className="pagination">

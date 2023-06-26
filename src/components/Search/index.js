@@ -1,14 +1,21 @@
+import React from 'react'
 import './styles.scss'
 
-const Search = () => {
+const Search = ({ setValue }) => {
   return (
-    <div>
-      <form>
-        <div className="search-group">
-          <input type="text" placeholder="Search" autoComplete="off" />
-        </div>
+    <React.Fragment>
+      <form className="form_search">
+        <label htmlFor="search"></label>
+        <input
+          onChange={(event) => setValue(event.target.value)}
+          id="search"
+          className="form_search__input"
+          type="text"
+          placeholder="Search"
+          autoComplete="off"
+        />
       </form>
-    </div>
+    </React.Fragment>
   )
 }
 

@@ -1,3 +1,4 @@
+import React from 'react'
 import dashboard from '../../assets/images/dashboard.svg'
 import SidebarItem from '../SidebarItem'
 import User from '../User'
@@ -10,8 +11,10 @@ const Sidebar = () => {
       <nav className="navbar navbar-expand-lg">
         <div className="navbar-top">
           <a className="text-decoration-none nav-brand">
-            <img src={dashboard} alt="Dashboard" />
-            <span>
+            <div className="sidebar_logo">
+              <img src={dashboard} alt="Dashboard" />
+            </div>
+            <span className="brand-name">
               Dashboard <span>v.01</span>
             </span>
           </a>
@@ -33,7 +36,11 @@ const Sidebar = () => {
           <div className="d-flex flex-column justify-content-between h-100">
             <ul className="nav flex-column">
               {menu.map((item) => {
-                return <SidebarItem key={item.name} {...item} />
+                return (
+                  <React.Fragment>
+                    <SidebarItem key={item.name} {...item} />
+                  </React.Fragment>
+                )
               })}
             </ul>
             <User />

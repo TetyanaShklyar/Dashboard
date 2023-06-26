@@ -7,6 +7,12 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  .sidebar_logo {
+    width: 37px;
+    height: 37px;
+    overflow: hidden;
+  }
   nav {
     padding: 0;
     flex-direction: column;

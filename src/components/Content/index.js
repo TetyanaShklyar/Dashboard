@@ -6,10 +6,10 @@ import './styles.scss'
 const Content = () => {
   return (
     <div className="content">
-      <div className="top-information">
-        <div>
-          <h3>All Customers</h3>
-          <span className="active">Active Members</span>
+      <div className="top_information">
+        <div className="top_information__text">
+          <h3 className="title_h3">All Customers</h3>
+          <span className="information_status active">Active Members</span>
         </div>
         <Search />
       </div>

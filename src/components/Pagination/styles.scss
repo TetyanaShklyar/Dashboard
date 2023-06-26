@@ -1,13 +1,13 @@
 @import '../../utils/_variables';
 
-.pagination-list {
+.pagination_list {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 10px 0 40px;
-  .text {
-    p {
+  .pagination_block {
+    .pagination_text {
       font-weight: 500;
       color: $paginationTextColor;
       margin-bottom: 0;

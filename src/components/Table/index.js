@@ -12,25 +12,25 @@ const Table = () => {
     'Status',
   ]
   return (
-    <div className="table-list table-responsive">
+    <div className="table_list table-responsive">
       <table className="table">
-        <thead>
-          <tr>
+        <thead className="table_thead">
+          <tr className="table_thead__tr">
             {tableHeads.map((th) => {
               return (
-                <th key={[th]} scope="col">
+                <th key={[th]} scope="col" className="table_thead__th">
                   {[th]}
                 </th>
               )
             })}
           </tr>
           <tr className="line">
-            <td>
-              <span></span>
+            <td className="line_td">
+              <span className="line_td__span"></span>
             </td>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="table_tbody">
           {customers.map((customer) => {
             return <Customer key={customer.id} {...customer} />
           })}

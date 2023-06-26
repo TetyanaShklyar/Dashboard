@@ -1,13 +1,13 @@
 @import '../../utils/_variables';
 
-.table-list {
+.table_list {
   margin-top: 25px;
   .table {
     table-layout: unset;
     overflow-y: hidden;
     margin-bottom: 0;
     .line {
-      span {
+      .line_td__span {
         background-color: $tableBorderColor;
         position: absolute;
         margin: 0;

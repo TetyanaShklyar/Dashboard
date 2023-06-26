@@ -7,18 +7,18 @@
   height: 100%;
   padding: 10px 40px 0 40px;
   position: relative;
-  .top-information {
+  .top_information {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    span {
+    .information_status {
       &.active {
         color: $activeColor;
       }
     }
   }
-  h3 {
+  .title_h3 {
     font-weight: 600;
     font-size: 22px;
     line-height: 33px;
