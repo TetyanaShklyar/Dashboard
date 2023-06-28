@@ -1,13 +1,12 @@
 import React from 'react'
 import './styles.scss'
 
-const Search = ({ setValue }) => {
+const Search = () => {
   return (
     <React.Fragment>
       <form className="form_search">
         <label htmlFor="search"></label>
         <input
-          onChange={(event) => setValue(event.target.value)}
           id="search"
           className="form_search__input"
           type="text"

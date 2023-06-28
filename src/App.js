@@ -4,7 +4,7 @@ import Wrapper from './components/Wrapper'
 
 function App() {
   return (
-    <div className="app min-vh-100">
+    <div className="app min_vh-100">
       <Sidebar />
       <Wrapper />
     </div>

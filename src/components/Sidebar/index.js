@@ -35,12 +35,8 @@ const Sidebar = () => {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <div className="d-flex flex-column justify-content-between h-100">
             <ul className="nav flex-column">
-              {menu.map((item) => {
-                return (
-                  <React.Fragment>
-                    <SidebarItem key={item.name} {...item} />
-                  </React.Fragment>
-                )
+              {menu.map((item, id) => {
+                return <SidebarItem key={id} {...item} />
               })}
             </ul>
             <User />
